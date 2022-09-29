@@ -85,28 +85,11 @@
   padding-left: 2rem;
 }
 
-/* @media (max-width: 375px) {
-  .emailInput {
-    height: 40px;
-    width: 330px;
-    font-size: 12px;
-  }
-} */
-
-/* @media (max-width: 360px) {
-  .emailInput {
-    height: 40px;
-    width: 330px;
-    font-size: 12px;
-  }
-} */
-
 @media (max-width: 414px) {
   .emailInput {
     height: 50px;
     width: 350px;
     font-size: 14px;
-    /* margin-left: 10px; */
   }
 }
 
