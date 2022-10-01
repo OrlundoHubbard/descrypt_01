@@ -40,14 +40,11 @@ export default function Home() {
           <h1 className={styles.writeCopy}>
             Better product descriptions. <br /> More conversions.
           </h1>
-          <div>
-            <p className={styles.h4Copy}>
-              Generate product descriptions that grabs your customers attention.
-            </p>
-          </div>
+
+          <p className={styles.h4Copy}>Generate product descriptions that grabs your customers attention.</p>
 
           <form className={styles.formStyles} onSubmit={subscribe}>
-            <div>
+            <div className={styles.inputWrapperStyles}>
               <input
                 className={styles.emailInput}
                 id="email-input"
@@ -57,11 +54,12 @@ export default function Home() {
                 required
                 type="email"
               />
+              <button type="submit" className={styles.waitlist}>
+                Notify Me
+              </button>
             </div>
-            <div>{message ? message : null}</div>
-            <button type="submit" className={styles.waitlist}>
-              Notify Me
-            </button>
+
+            {message ? <p className={styles.messageStyles}>{message}</p> : null}
           </form>
         </div>
         <div className={styles.colorCircle}>
